@@ -28,8 +28,9 @@ jobs:
         provider: releases
         api-key: $GITHUB_API_KEY
         name: Latest resume build [$(date +"%Y.%m.%d")]
-        file: build/resume.pdf
-        file: resume.png
+        file: 
+        - build/resume.pdf
+        - resume.png
         skip_cleanup: true
         overwrite: true
         target_commitish: $TRAVIS_COMMIT
