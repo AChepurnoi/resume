@@ -31,5 +31,8 @@ As an example, you can check my resume [here](https://github.com/AChepurnoi/resu
 * Edit `source.tex`
 * Compile to pdf in ∞ ways! (`pdflatex`)
 
+### References
+* [Template base and inspiration](https://github.com/sb2nov/resume)
+
 
 
