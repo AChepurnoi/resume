@@ -13,6 +13,7 @@ As an example, you can check my resume [here](https://github.com/AChepurnoi/resu
 
 ## Features
 * Easy to edit and build
+* Easy to version
 * Clear and structured
 * Built with Travis CI 😱
 
