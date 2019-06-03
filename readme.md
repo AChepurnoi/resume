@@ -24,8 +24,8 @@ As an example, you can check my resume [here](https://github.com/AChepurnoi/resu
 * Fork this repo
 * Create a `GITHUB_API_KEY` with :repo access (Settings -> Developer settings -> Personal access tokens) 
 [docs](https://docs.travis-ci.com/user/deployment/releases/#authenticating-with-an-oauth-token)
-* Encrypt token  using `travis encrypt GITHUB_API_KEY={token}` and set it to secure env in `.travis.yml`
-* Edit `source.tex`, commit, enjoy! You can change content or totally change the layout, it's up to you!
+* Encrypt token  using `travis encrypt GITHUB_API_KEY={token}` and set it to secure env in `.travis.yml` or add to repository env. from Travis UI
+* Edit `resume.tex`, commit, enjoy! You can change content or totally change the layout, it's up to you!
 
 ### Manual
 * Edit `source.tex`
