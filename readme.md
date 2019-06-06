@@ -26,7 +26,8 @@ As an example, you can check my resume [here](https://github.com/AChepurnoi/resu
 [docs](https://docs.travis-ci.com/user/deployment/releases/#authenticating-with-an-oauth-token)
 * Encrypt token  using `travis encrypt GITHUB_API_KEY={token}` and set it to secure env in `.travis.yml` or add to repository env. from Travis UI
 * Edit `resume.tex`, commit, enjoy! You can change content or totally change the layout, it's up to you!
-
+### Template
+* Just use new cool github feature!
 ### Manual
 * Edit `source.tex`
 * Compile to pdf in ∞ ways! (`pdflatex`)
