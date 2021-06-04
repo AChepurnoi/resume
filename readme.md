@@ -1,6 +1,6 @@
 
 # 👨‍💻Resume 
-<a href="https://github.com/AChepurnoi/resume/releases/download/latest-build/resume.pdf">
+<a href="https://github.com/AChepurnoi/resume/src/resume.pdf">
 <img src="assets/preview.png" height=460px width=350px align="right"/>
 </a>
 
