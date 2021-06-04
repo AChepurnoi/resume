@@ -23,8 +23,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -40,7 +40,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item{
     \textbf{#1}{#2 \vspace{-1pt}}
   }
 }
@@ -83,10 +83,10 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading{\href{https://plai.team}{Plai.team}}{Kyiv}{Technical founder}{Sep 2019 - Present}
-    {Plai is simplified performance management system for small and medium businesses. 
+    {Plai is the simplified performance management system for small and medium businesses. 
     I am responsible for the technical side of the product: planning, execution, operations. 
-    Built a product from 0 to \$60k AAR. Winners of the Pioneer.app remote startup accelerator, participated in YC SUS and YC on-sight interviews. 
-    Project is live but we discontinued development. The most notable achievements are:}
+    We built a product from 0 to \$60k AAR. Winners of the Pioneer.app remote startup accelerator, participated in YC SUS and YC on-sight interviews. 
+    The project is live, but we discontinued development. The most notable achievements are:}
     \vspace{-5pt}
     \resumeItemListStart
   
@@ -94,17 +94,16 @@
     
     \resumeItem{}{Built a real-time distributed document editor (Notion-like) using Operation Transformation on top of the Slate.js editor and custom operations.}
 
-    \resumeItem{}{Conducted demo calls with customers, user interviews, planning and grooming meetings with the team.}
+    \resumeItem{}{Conducted demo calls with customers, user interviews, planning and grooming meetings with the team. Implemented product analytics with Amplitude to measure retention and other product metrics.}
 
     \resumeItem{}{Implemented reliable observability process with tracing and error reporting across the components (Web, Backend, Mobile) using Sentry, Grafana, and Elastic APM.}
-
-    \resumeItem{}{Implemented product analytics with Amplitude to measure retention and other product-related metrics.}
 
     \resumeItemListEnd
 
     \resumeSubheading{\href{https://uptech.team}{Uptech}}{Kyiv}{Solution architect / Backend Engineer}{Jun 2016 - Present}
-    {My responsibilities are to participate in project presales from the technical side, provide reasonable solution design and estimation based on inputs from customers and product managers. During project production, I lead and coach the cross-functional dev teams (together with the product manager) on best practices and feature implementation and work as an IC as well.}
-     {At some point, I was leading the team of 7 engineers as a Backend lead. Conducted department check-ins with knowledge sharing, one-on-one meetings with team members, organized personal development plans for the team. }
+    {My responsibilities are to participate in project presales from the technical side, provide practical solution design and estimation based on inputs from customers and product managers. During project production, I lead and coach the cross-functional dev teams (together with the product manager) 
+    on best practices and feature implementation and work as an IC.}
+     {At some point, I was leading the team of 7 engineers as a Backend lead. Conducted department check-ins with knowledge sharing, one-on-one meetings with team members, organized personal development plans. }
     
      \vspace{-5pt}
 
@@ -112,8 +111,8 @@
       \resumeItem{Healthcare project: }{A HIPAA compliant telemedicine application for curing eating disorders. The application is built using Node.js + Nest framework. 
       We levered services such as Agora (video-calls), Sendbird(messaging), AWS Cognito (Authorization) to implement necessary features with specific compliance requirements}
 
-      \resumeItem{Yaza.io: }{Map-based messaging app with video. We implemented efficient storage for video content and HLS encrypted video streaming using Amazon S3, CloudFront, and MongoDB,
-      secure uploading and permission management integrated Google Maps for searching and suggesting places, PubNub for fast and reliable real-time messaging. 
+      \resumeItem{Yaza.io: }{Map-based messaging app with video. We implemented efficient storage for video content, and HLS encrypted video streaming using Amazon S3, CloudFront, MongoDB,
+      secure uploading and permission management integrated Google Maps to search and suggest places, PubNub for fast and reliable real-time messaging. 
       Also, implemented CI/CD process using Travis CI, cloud configuration management with Terraform and Ansible, deployment on ECS cluster with Docker.}
      \resumeItemListEnd
 
@@ -131,13 +130,10 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \itemsep0.2em 
-
-    \resumeSubItem{Kidney Tumor Segmentation Challenge: }
-      {Implemented segmentation of 3D CT scan of kidney and kidney tumor. Trained a robust 3D Unet model using PyTorch on sparse high dimensional data }
     \resumeSubItem{Kaggle Airbus Ship Segmentation: }
-      {Top 10\% result(80 place) in Ships Segmentation Challenge. Implemented and trained an Unet-like neural network with data augmentation and multistep learning process}
+      {Top 10\% result(80th place) in Ships Segmentation Challenge. Implemented and trained an Unet neural network with data augmentation and multistep learning process}
     \resumeSubItem{Kaggle Salt Identification: }
-      {Top 8\% result in Salt Segmentation Challenge. Implemented and trained UNet with Deep supervision, attention and cyclic learning rate. Built a pipeline with strong data augmentation, validation and evaluation.}
+      {Top 8\% result in Salt Segmentation Challenge. Implemented and trained UNet with Deep supervision, attention, and cyclic learning rate. Built a pipeline with solid data augmentation, validation, and evaluation.}
   \resumeSubHeadingListEnd
 
 

@@ -18,7 +18,7 @@ jobs:
       - mkdir build
       - pdflatex -interaction=nonstopmode -halt-on-error -output-directory build src/resume.tex
       - sudo sed -i_bak 's/rights="none" pattern="PDF"/rights="read | write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
-      - convert -density 300 -background white -alpha remove build/resume.pdf[0] resume.png
+      - convert -density 300 -background white -alpha remove build/resume.pdf resume.png
       - git tag -f latest-build
       - git remote add gh https://${TRAVIS_REPO_SLUG%/*}:${GITHUB_API_KEY}@github.com/${TRAVIS_REPO_SLUG}.git
       - git push -f gh latest-build
