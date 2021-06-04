@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: xenial
 
 branches:
   except:
@@ -12,7 +12,7 @@ jobs:
       - secure: "FD+b/QFArfdRs+ZbQwm7Rez3jNfiz9c1QmIs/FVXj3DgIJkM3APVRQiBfHtg/+H0LZf0RpX7DrIRLur9mY3//Ejq5R7Z9L6dSc/GhEmxKwHK9D3ky/x1yGyi8jJoSERJ22ZU7zYkzblmk5h94UMAhIh4Mx4TEILCgYiIL778hoW97qbNpOZFmB1/avxkjSgnASj5YMsfKiDaIkVi+/zMt08oeKy+1vcodrAhLHhrtYum7iHVkY/zjHzqQ5DYZQKhMKHfpJU+2yP5T+qmiTWcadcK8lej/KtBOmP75dA1F0+1Yl9InOPwr5q7SSwbQkDOuulShFFRwed2hL6CaJoiUOzAjBYvm5C8Z8sXtLZcmXihITPmtNsIr2JWUCE9S04HFwNgbXfhw8e7Mj2X+ZqgRL3fpWqkQI1Jh7wIWmYInFJiF91eJYXYyIOB2sV+PiF0fvq2XV/u+Us4y31NNJo9GjXfTlilK3OE75uPumsa/1HDimdhYl2aVAe9sszMeM38vbzMOADkfg09r1f6DB1MExgwFfnmE1iRsVp1fWdfqZtiuaaY3DOVWAuJ4MKenxnWeuZ9eZUvyC02SP3Gbqxd99SIvwT0sAszk6bg5ryYEpwBeHlHs39IVlcEi1Qg8GIEHIPFuQXTMSAaVj9I/fk+Cbs1lY2AjyWhb6uAuIHNRMk="
       
       before_install:
-      - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full imagemagick
+      - sudo apt-get -qq update && sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra imagemagick
       
       script:
       - mkdir build
