@@ -41,7 +41,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-1pt}}
   }
 }
 
@@ -50,14 +50,14 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{4pt}
 }
 
 \newcommand{\resumeSubheadingPosition}[2]{
   \vspace{2pt}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{0pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -74,79 +74,55 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Sasha Chepurnoi} & Email : \href{mailto:sasha.chepurnoii@gmail.com}{sasha.chepurnoii@gmail.com}\\
-  \color{blue}
-  \href{https://github.com/AChepurnoi}{Github} 
   \color{black}
-  And 
-  \color{blue}  
-  \href{https://www.linkedin.com/in/sasha-chepurnoii/}{Linkedin} & Mobile : +380668054000
+  \href{https://github.com/AChepurnoi}{https://github.com/AChepurnoi} & Mobile : +380668054000
 \end{tabular*}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {\href{https://uptech.team}{Uptech}}{Kyiv}
-      {Backend Engineer}{Jun 2016 - Present}
+    \resumeSubheading{\href{https://plai.team}{Plai.team}}{Kyiv}{Technical founder}{Sep 2019 - Present}
+    {Plai is simplified performance management system for small and medium businesses. 
+    I am responsible for the technical side of the product: planning, execution, operations. 
+    Built a product from 0 to \$60k AAR. Winners of the Pioneer.app remote startup accelerator, participated in YC SUS and YC on-sight interviews. 
+    Project is live but we discontinued development. The most notable achievements are:}
+    \vspace{-5pt}
+    \resumeItemListStart
+  
+    \resumeItem{}{Built a backend for setting OKRs, conducting performance reviews, one-on-ones. Integrations with Google calendar, Slack, MS Teams. Stack: Kotlin + arrow, Spring, Mongo. Deployed to the AWS.}
+    
+    \resumeItem{}{Built a real-time distributed document editor (Notion-like) using Operation Transformation on top of the Slate.js editor and custom operations.}
 
-      \resumeSubheadingPosition
-      {Backend Lead}{Feb 2018 - October 2019}
-      \resumeItemListStart
-        \resumeItem{Company wide}
-          {As Backend lead, was responsible for alignment of the backend team of 8 people with company strategy and vision, cross-department collaboration.
-          Implemented personal development plans with the team members, knowledge sharing talks, one-on-ones, and OKR framework.
-          Helped team with a cloud configuration, system design, recruiting, soft and hard skills growth. Participated in knowledge sharing events (Tech Talks), pre-sale calls. 
-          Also participated in technical discovery for different projects to define solution architecture, tech stack, and estimate
-          }
-        \resumeItem{Yaza}
-         {Designed an API for a map-based messenger with a focus on video content using Java, Spring Boot 2 and clean architecture approach (Hexagonal architecture).
-         Implemented efficient storage for big amount of video content and HLS encrypted video streaming using Amazon S3, CloudFront and Mongodb,
-         secure uploading and permission management. 
-         Integrated Google Maps for searching and suggesting places, PubNub for fast and reliable real-time messaging. 
-         Implemented CI/CD process using Travis CI, cloud/configuration management with Terraform and Ansible,
-         deployment on ECS cluster with Docker.
-         
-         }
-         \resumeItem{Advaice}
-          {Designed an API for advertising platform. 
-          Integrated collection of advertising data from Google Adwords, Facebook Ads, MyTarget Ads and event data from Appsflyer and Adjust.
-          Implemented rich report generation, billing system using Stripe API and emailing using Mailchimp API. 
-          Created Python Lambda functions to parse Apple Appstore/Google play. 
-          Lead team of 4 people. 
-          Implemented CI/CD process using Travis CI, cloud/configuration management with Terraform and Ansible.
-          }
+    \resumeItem{}{Conducted demo calls with customers, user interviews, planning and grooming meetings with the team.}
 
-          \resumeItem{Rivalz}
-        {Designed and implemented an API for mobile application. 
-        Implemented App store and Google play in-app purchases verification, 
-        Stripe payment API integration, notifications using Firebase API. 
-        Integrated scheduling system using Google Calendar API.
-        Lead team of 2 developers.
-        Implemented CI/CD process using Jenkins, cloud/configuration management with Terraform and Ansible.
-        }
-        
-        \resumeItem{Vitalacy}
-        {Implemented an API with Kotlin and Spring Boot framework for the healthcare IOT platform. 
-        Implemented efficient background batch data processing. 
-        Integrated room management system with PostGIS extension for PostgreSQL. 
-        Implemented a reliable permission management system for different roles. 
-        Configured a Jenkins CI to run tests and do deployment on AWS Beanstalk
-        }
-      \resumeItemListEnd
+    \resumeItem{}{Implemented reliable observability process with tracing and error reporting across the components (Web, Backend, Mobile) using Sentry, Grafana, and Elastic APM.}
+
+    \resumeItem{}{Implemented product analytics with Amplitude to measure retention and other product-related metrics.}
+
+    \resumeItemListEnd
+
+    \resumeSubheading{\href{https://uptech.team}{Uptech}}{Kyiv}{Solution architect / Backend Engineer}{Jun 2016 - Present}
+    {My responsibilities are to participate in project presales from the technical side, provide reasonable solution design and estimation based on inputs from customers and product managers. During project production, I lead and coach the cross-functional dev teams (together with the product manager) on best practices and feature implementation and work as an IC as well.}
+     {At some point, I was leading the team of 7 engineers as a Backend lead. Conducted department check-ins with knowledge sharing, one-on-one meetings with team members, organized personal development plans for the team. }
+    
+     \vspace{-5pt}
+
+     \resumeItemListStart
+      \resumeItem{Healthcare project: }{A HIPAA compliant telemedicine application for curing eating disorders. The application is built using Node.js + Nest framework. 
+      We levered services such as Agora (video-calls), Sendbird(messaging), AWS Cognito (Authorization) to implement necessary features with specific compliance requirements}
+
+      \resumeItem{Yaza.io: }{Map-based messaging app with video. We implemented efficient storage for video content and HLS encrypted video streaming using Amazon S3, CloudFront, and MongoDB,
+      secure uploading and permission management integrated Google Maps for searching and suggesting places, PubNub for fast and reliable real-time messaging. 
+      Also, implemented CI/CD process using Travis CI, cloud configuration management with Terraform and Ansible, deployment on ECS cluster with Docker.}
+     \resumeItemListEnd
 
     \resumeSubheading
       {Bionic Development Studio}{Kyiv}
       {Junior Java Developer}{Dec 2015 - Jun 2016}
-      \resumeItemListStart
-        \resumeItem{Driver management system}
-          {
-            Implemented domain-specific calculations and excel report generation with Jasper Reports.
-            Tuned Hibernate queries and increased the overall performance of the application
-            Developed an API for Android client.
-            Implemented Android application as a frontend for API
-          }
-      \resumeItemListEnd
+      {
+        Implementing domain-specific calculations on API side + developing Android client.
+      }
 
   \resumeSubHeadingListEnd
 
@@ -154,11 +130,13 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Kidney Tumor Segmentation Challenge}
+    \itemsep0.2em 
+
+    \resumeSubItem{Kidney Tumor Segmentation Challenge: }
       {Implemented segmentation of 3D CT scan of kidney and kidney tumor. Trained a robust 3D Unet model using PyTorch on sparse high dimensional data }
-    \resumeSubItem{Kaggle Airbus Ship Segmentation}
+    \resumeSubItem{Kaggle Airbus Ship Segmentation: }
       {Top 10\% result(80 place) in Ships Segmentation Challenge. Implemented and trained an Unet-like neural network with data augmentation and multistep learning process}
-    \resumeSubItem{Kaggle Salt Identification}
+    \resumeSubItem{Kaggle Salt Identification: }
       {Top 8\% result in Salt Segmentation Challenge. Implemented and trained UNet with Deep supervision, attention and cyclic learning rate. Built a pipeline with strong data augmentation, validation and evaluation.}
   \resumeSubHeadingListEnd
 
@@ -166,6 +144,7 @@
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
+  \itemsep-0.5em 
   \resumeSubheading
     {Ukrainian Catholic University}{Lviv}
     {Master of Science in Data Science and Machine Learning}{Sep. 2018 -- Jan. 2020}
